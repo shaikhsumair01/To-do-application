@@ -112,12 +112,14 @@ h1{
     height: 10%;
     transition: 0.2s linear;
 }
+/* Styling the list item which is added from the input */
 .item-para{
     font-size: 1.2rem;
     color:  #822E81;
     font-weight: 500; 
     text-shadow: 1px 1px 2px #cdabcd;
 }
+/* Styling the delete button */
 .del-btn{
     background: linear-gradient(90deg,   #cdabcd ,  #822E81);
     width: 3rem;
