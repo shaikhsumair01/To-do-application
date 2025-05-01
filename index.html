@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- The head section including meta tags and the link of the external sources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -11,13 +12,23 @@
     <title>To do list</title>
 </head>
 <body>
+    <!-- Container class contains the text input for the user to provide the inputs which gets stored in the list  -->
     <div class="container">
-    <div class="header"> <h1>To-Do List</h1> </div>  
+    <!-- Header class for aligning h1 and the icon   -->
+    <div class="header"> 
+        <h1>To-Do List</h1> 
+        <i class="fa fa-flag flag" style = "font-size: 20px;"></i>
+    </div>  
+    <!-- fields to align the field inputs taking the information (text box and submit button) -->
     <div class="fields"> 
-    <input type="text" class="task">
-    <button class="btn" type="submit">OK</button> 
+    <input type="text" class="field-input">
+    <button class="field-btn" type="submit">Add</button> 
     </div>
     </div>
-
+    <!-- <div class="item">
+    <p class="item-para">Item 1</p>
+    <button class="del-btn">del</button>
+    </div> -->
+<script src="main.js"></script>
 </body>
 </html>
