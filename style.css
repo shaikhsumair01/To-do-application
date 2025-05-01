@@ -39,7 +39,6 @@ h1{
     font-size: 1.8rem;
     margin-left: 50px;
     margin-top: 18px;
-    color: #822E81;
     text-shadow: 3px 3px 5px #cdabcd;
 
 }
@@ -60,12 +59,17 @@ h1{
     position: relative;
 }
 /* Styling the text box (field-input): on hover/ focus the box shadow should be inverted( adding an animation effect) */
+input[type = "checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .field-input{
     width: 100%;
     height: 2.2rem;
-    color: #822E81;
     font-size: 1.2rem;
     font-weight: 600;
+    padding-left: 20px;
     border: none;
     border-radius: 30px;
     box-shadow: 3px 3px 1px #cdabcd, -3px -3px 1px #822E81;
@@ -74,7 +78,6 @@ h1{
 .field-input:focus{
     border: none;
     outline: none;
-    padding-left: 20px;
     box-shadow: 3px 3px 1px #822E81, -3px -3px 1px #cdabcd;
     
 }
@@ -115,7 +118,6 @@ h1{
 /* Styling the list item which is added from the input */
 .item-para{
     font-size: 1.2rem;
-    color:  #822E81;
     font-weight: 500; 
     text-shadow: 1px 1px 2px #cdabcd;
 }

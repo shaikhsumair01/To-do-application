@@ -8,6 +8,8 @@ addbutton.addEventListener("click", function(){
     // Creating div with item class (list class)
     const div_item = document.createElement("div");
     div_item.classList.add("item");
+    const radio = document.createElement("input");
+    radio.type = "checkbox";
     // creating p element and adding the user input in it
     const list_item = document.createElement("p");
     list_item.classList.add("item-para")
@@ -21,9 +23,11 @@ addbutton.addEventListener("click", function(){
     // if list is empty we return it else we append the list item in it
     if (list_txt.value === "")return;
     document.body.appendChild(div_item);
+    div_item.appendChild(radio);
     div_item.appendChild(list_item);
     div_item.appendChild(del_button);
-    list_txt.value = " ";
+    list_txt.value ="";
+    list_txt.placeholder = "Add your task";
 })
 // removing the list when the delete button is clicked (added click event on the document. 
 // If the target contains del button class then we remove the parentElement from the body.)
